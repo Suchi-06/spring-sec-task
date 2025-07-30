@@ -5,6 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="users")
@@ -16,7 +19,6 @@ public class UserEntity {
 	private String email;
 	private String username;
 	private String password;
-	
 	public Long getId() {
 		return id;
 	}
@@ -35,7 +37,6 @@ public class UserEntity {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
 	public String getUsername() {
 		return username;
 	}
@@ -59,6 +60,7 @@ public class UserEntity {
 	public UserEntity() {
 		super();
 	}
+	
 	
 	
 
